@@ -3,7 +3,9 @@
 .home {
 
   .intro {
-
+    img{
+      width:100%;
+    }
     h2 {
       padding: 15px;
     }
@@ -58,6 +60,15 @@
       }
 
       .btn {
+        .button(black, 30%, white);
+        margin: 0;
+        text-align: center;
+        padding-top:4%;
+
+        &:hover{
+          background-color: white;
+          color:black;
+        }
       }
     }
 
@@ -69,6 +80,44 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+      }
+    }
+  }
+
+  @media @phone{
+    width:100%;
+    .intro{
+      img{
+        width:100%;
+      }
+    }
+    .space-images{
+      .sky, .launch{
+        display:none;
+      }
+      .blast{
+        width:100%;
+      }
+    }
+    .walk{
+      padding:1%;
+      margin:0 auto;
+      flex-direction:column-reverse;
+      max-width: 100%;
+      .walk-img{
+        width:100%;
+        margin:0;
+        padding: 2%;
+        max-width: 100%;
+      }
+      .walk-text{
+        width:100%;
+        padding:3%;
+        .btn{
+          width:100%;
+          padding-top:3%;
+        }
+        
       }
     }
   }
